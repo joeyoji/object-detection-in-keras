@@ -44,7 +44,7 @@ def SSD_VGG16(
           SSD: Single Shot MultiBox Detector. https://arxiv.org/abs/1512.02325
     """
     model_config = config["model"]
-    input_shape = (model_config["input_size"], model_config["input_size"], 3)
+    input_shape = (model_config["input_size"]["height"], model_config["input_size"]["width"], 3)
 
     num_classes = len(label_maps) + 1  # for background class
     l2_reg = model_config["l2_regularization"]
