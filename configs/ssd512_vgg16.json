@@ -4,7 +4,7 @@
         "input_size": 512,
         "l2_regularization": 0.0005,
         "kernel_initializer": "he_normal",
-        "base_network_trainable": True,
+        "base_network_trainable": true,
         "default_boxes": {
             "extra_box_for_ar_1": true,
             "clip_boxes": false,
