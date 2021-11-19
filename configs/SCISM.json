@@ -18,7 +18,7 @@
             "max_scale": 0.9,
             "layers": [
                 {
-                    "name": "conv4_3",
+                    "name": "fusion345",
                     "size": 38,
                     "offset": [
                         0.5,
@@ -31,7 +31,7 @@
                     ]
                 },
                 {
-                    "name": "fc7",
+                    "name": "layer_level4_from_resnet101",
                     "size": 19,
                     "offset": [
                         0.5,
@@ -46,7 +46,7 @@
                     ]
                 },
                 {
-                    "name": "conv8_2",
+                    "name": "layer_level5_from_ssd512",
                     "size": 10,
                     "offset": [
                         0.5,
@@ -61,7 +61,7 @@
                     ]
                 },
                 {
-                    "name": "conv9_2",
+                    "name": "layer_level6_from_ssd512",
                     "size": 5,
                     "offset": [
                         0.5,
@@ -76,20 +76,7 @@
                     ]
                 },
                 {
-                    "name": "conv10_2",
-                    "size": 3,
-                    "offset": [
-                        0.5,
-                        0.5
-                    ],
-                    "aspect_ratios": [
-                        1.0,
-                        2.0,
-                        0.5
-                    ]
-                },
-                {
-                    "name": "conv11_2",
+                    "name": "layer_level7_from_ssd512",
                     "size": 1,
                     "offset": [
                         0.5,
